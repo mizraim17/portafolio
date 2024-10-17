@@ -1,3 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
+// svg
+svg path,
+svg rect {
+  fill: black;
+}
+
 @import "~animate.css/animate.min.css";

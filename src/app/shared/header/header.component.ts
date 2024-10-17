@@ -7,5 +7,7 @@ import { InfoPaginaService } from '../../services/info-pagina.service';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  constructor(public _info: InfoPaginaService) {}
+  constructor(public _info: InfoPaginaService) {
+    console.log('_info head', _info.equipo);
+  }
 }
