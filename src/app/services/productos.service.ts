@@ -15,7 +15,7 @@ export class ProductosService {
   }
 
   private cargarProducto() {
-    return new Promise((resolve, reject) => {
+    return new Promise<void>((resolve, reject) => {
       this.http
         .get(
           ' https://wepapp-angular-default-rtdb.firebaseio.com/productos_idx.json'
@@ -24,7 +24,7 @@ export class ProductosService {
           console.log('res', resp);
           this.productos = resp;
           this.cargando = false;
-          resolve;
+          resolve();
         });
     });
   }
